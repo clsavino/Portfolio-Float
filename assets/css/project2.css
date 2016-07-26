@@ -1,0 +1,217 @@
+/*
+ * Float Layout 
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+	font-size: 20px;
+	line-height: 30px;
+	background: url("images/light_grey.png") repeat;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+}
+
+.header-wrapper {
+	width: 960px;
+	margin: auto;
+}
+
+header {
+	/*padding: 20px;*/
+	margin: 0px;
+	border: 2px solid #eee;
+	background-color: #ffffff;
+	border-style: none;
+	border-bottom: 1px #cccccc solid;
+	height: 100px;
+}
+
+h1#name {
+	float: left;	
+	border: 1px #cccccc solid;
+	color: #ffffff;
+	background-color: #4aaaa5;
+	padding: 20px;	
+	font-size: 25px;
+	text-align: center;
+	height: 100px;
+	/*margin-bottom: 20px;*/
+}
+.navbar {
+	float: right;	
+	color: #777777;
+	font-size: x-small;
+	text-align: center;
+    padding: 25px;
+}
+.navbar a {
+	padding: 10px;
+}
+
+a {
+	text-decoration: none;
+}
+ /* unvisited link */
+.navbar a:link {
+    color: #777777;
+    text-decoration: none;
+}
+
+/* visited link */
+.navbar a:visited {
+    color: #777777;
+    text-decoration: none;
+}
+
+/* mouse over link */
+.navbar a:hover {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #4aaaa5;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* selected link */
+.navbar a:active {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.content-wrapper {
+	width: 960px;
+	margin: auto;
+}
+
+main {
+	float: left;
+	width: 650px;
+    margin: 20px 20px 0 0;
+	padding: 20px;
+	border: 1px solid #eee;
+	color: #666;
+
+}
+main, aside {
+	background-color: #ffffff;
+	border: 1px #dddddd solid;
+}
+h1, h3 {
+	color: #4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+h1 {
+	font-size: 25px;
+}
+
+
+p { 
+	font-size: 16px;
+}
+.bio img {
+  float:left;
+  margin: 20px 20px 20px 0;
+}
+.bio p {
+  margin: 0 20px 0 0;
+  line-height: 1.5em;
+}
+main hr {
+  margin: 20px 0 10px 0;
+}
+main a {
+  margin-bottom: 30px;
+}
+.outer {
+  position: relative;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 0em;
+  width: 190px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: teal;
+  text-align: center;
+ }
+}
+
+div.placeholder {
+  display: inline-block;
+  float: left;
+  margin: 20px 20px 0 20px;
+}
+
+.placeholder img {
+  width: 220px;
+  margin: 0;
+}
+input{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 590px;
+  padding: 5px;
+  color: #000000; /* grey when not in focus*/
+}
+#username:focus {
+	color:#de2a00; /* green when input has focus - only affects this specific input */
+} 
+textarea {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 580px;
+  height: 100px;
+  padding: 10px;
+}
+button {
+  margin: 10px 0px 20px 0px;
+  padding: 10px 20px;
+  background-color: #4aaaa5;
+  color: white;
+  font-weight: normal;
+  font-size: 18px;
+}
+aside {
+	float: right;
+	width: 270px;
+  	margin:  20px 0 20px 20px;
+	padding: 20px;
+	border: 1px solid #eee;
+	text-align: center;
+}
+
+aside img  {
+  padding: 5px 0;
+  margin-bottom: 20px;
+}
+
+footer {
+	background-color: #666666;
+	border-top: 6px #4aaaa5 solid;
+	clear: both;
+	font-size: 10px;
+	text-align: center;
+	color: white;
+	margin-bottom: 0;
+    padding: 25px;
+    height: 10px;
+}
